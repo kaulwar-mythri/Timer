@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .timer-circle {
+    display: inline-block;
+    font-size: 48px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f2951b; /* Orange */
+    color: #fff;
+    box-shadow: 0 0 30px rgba(242, 149, 27, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+  }
+  
+  button {
+    margin: 0 10px; /* Adjusted margin for better spacing */
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #3498db; /* Blue */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  }

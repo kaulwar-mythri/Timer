@@ -1,0 +1,22 @@
+<!-- <main class="main">
+  <div class="content">
+    <p>{{countdown | timer}}</p>
+    <button (click)="running ? resetTimer() : startTimer()">{{running ? "Reset" : "Start"}}</button>
+    <button (click)="paused ? resumeTimer() : pauseTimer()" *ngIf="running">{{paused ? "Resume" : "Pause"}}</button>
+  </div>
+</main> -->
+<main class="main">
+  <div class="content">
+    <div class="timer-circle">{{countdown | timer}}</div>
+    <div class="button-container">
+      <button (click)="running ? resetTimer() : startTimer()" class="start-button">
+        {{running ? "Reset" : "Start"}}
+      </button>
+      <button (click)="paused ? resumeTimer() : pauseTimer()" *ngIf="running" class="stop-button">
+        {{paused ? "Resume" : "Pause"}}
+      </button>
+    </div>
+  </div>
+</main>
+
+<router-outlet></router-outlet>
